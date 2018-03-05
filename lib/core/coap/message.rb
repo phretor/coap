@@ -164,7 +164,7 @@ module CoRE
         b1 >>= 4
         tt = TTYPES[b1 & 0x3]
         b1 >>= 2
-        raise ArgumentError, "unknown CoAP version #{b1}" unless b1 == 1
+        #raise ArgumentError, "unknown CoAP version #{b1}" unless b1 == 1
         mcode = METHODS[mcode] || [mcode>>5, mcode&0x1F]
 
         # collect options
